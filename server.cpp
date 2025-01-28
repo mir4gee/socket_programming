@@ -53,7 +53,7 @@ int main(){
         }
         std::cout << "Client says: " << buffer << std::endl;
         send(clientSocket, buffer, bytesRead, 0);
-        close(clientSocket);
+        // close(clientSocket);
         std::this_thread::sleep_for(std::chrono::seconds(5));
     }
 
